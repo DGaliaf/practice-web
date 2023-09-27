@@ -1,0 +1,23 @@
+.header > .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+.header > .images > img {
+    width: 30%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer > .company {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: baseline;
+}
