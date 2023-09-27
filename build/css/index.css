@@ -21,3 +21,8 @@
     flex-wrap: wrap;
     align-content: baseline;
 }
+
+.main > .form > form > .data {
+    display: flex;
+    align-items: baseline;
+}
