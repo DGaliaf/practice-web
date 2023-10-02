@@ -85,21 +85,35 @@
         </section>
         <section class="form">
             <h2>Подарить дом</h2>
-            <form action="giveaway" method="POST">
-                <p>Имя: <input type="text" placeholder="Поле для ввода имени усыновителя"></p>
-                <p>Фамилия: <input type="text" placeholder="Поле для ввода фамилии усыновителя"></p>
-                <p>Электронная почтая: <input type="email" placeholder="Поле для ввода адреса электронной почты усыновителя"></p>
-                <p>Телефон: <input type="number" placeholder="Поле для ввода имени усыновителя"></p>
-                <p>Адрес: <input type="text" placeholder="Поле для ввода адреса проживания усыновителя"></p>
-                <p>Ваш опыт с животными: <input type="text" placeholder="Текстовое поле, где усыновитель может описать свой опыт в уходе за животными (например, рассказать о предыдущих питомцах)."></p>
-                <p>Почему вы хотите усыновить: <input type="text" placeholder="Текстовое поле для объяснения мотивации усыновителя и почему он хочет усыновить именно бездомного животного"></p>
-                <div class="data">
-                    <input type="checkbox">
-                    <p>Согласие на обработку данных</p>
-                </div>
-                <button type="submit" form="giveaway">
-                    Отправить
-                </button>
+            <form action="giveaway" method="POST" id="adoption">
+                <fieldset>
+                    <legend>Заполните форму</legend>
+                    <label for="name" form="adoption">Имя: <input id="name" type="text" placeholder="Поле для ввода имени усыновителя"></label>
+                    <label for="surname" form="adoption">Фамилия: <input id="surname" type="text" placeholder="Поле для ввода фамилии усыновителя"></label>
+                    <label for="email" form="adoption">Электронная почтая: <input id="email" type="email" placeholder="Поле для ввода адреса электронной почты усыновителя"></label>
+                    <label for="phone" form="adoption">Телефон: <input id="phone" type="number" placeholder="Поле для ввода имени усыновителя"></label>
+                    <label for="address" form="adoption">Адрес: <input id="address" type="text" placeholder="Поле для ввода адреса проживания усыновителя"></label>
+                    <label for="exprerience" form="adoption">Ваш опыт с животными: 
+                        <select>
+                            <optgroup label="Опыт">
+                              <option>Меньше месяца</option>
+                              <option>Один месяц</option>
+                              <option>Больше месяца</option>
+                              <option>Около полугода</option>
+                              <option>Год</option>
+                              <option>Больше года</option>
+                            </optgroup>
+                          </select>
+                    </label>
+                    <label for="reasons" form="adoption">Почему вы хотите усыновить: <input id="reasons" type="text" placeholder="Текстовое поле для объяснения мотивации усыновителя и почему он хочет усыновить именно бездомного животного"></label>
+                    <div class="data">
+                        <input type="checkbox">
+                        <p>Согласие на обработку данных</p>
+                    </div>
+                    <button class="submit-button" type="submit" form="giveaway">
+                        Отправить
+                    </button>
+                </fieldset>
             </form>
         </section>
     </main>

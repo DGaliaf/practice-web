@@ -26,3 +26,26 @@
     display: flex;
     align-items: baseline;
 }
+
+#adoption > fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;    
+}
+
+#adoption > fieldset > .data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+#adoption > fieldset > .data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+#adoption > fieldset > .submit-button {
+    width: 25%;
+}
